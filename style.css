@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after{
+    /* Need to find a font family for everything */
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --Min_width: 100vw;
+    min-width: var(--Min_width);
+    height: 100vh;
+    display: flex;
+}
+section{
+    border: solid red 2px;
+}
+.Logo-Title-Section{
+    min-width: max( 350px, calc(var(--Min_width) - 60vw));
+    background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.Logo-title{
+    background-color: black;
+    min-width: max( 350px, calc(var(--Min_width) - 60vw)) ;
+    height: 200px;
+    font-size: 5rem;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logo-footer a{
+    color: white;
+    min-width: max( 350px, calc(var(--Min_width) - 60vw)) ;
+   
+    
+}
+
+
+
