@@ -38,11 +38,12 @@ section{
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+
+    position: relative;
     
 }
-.Logo-title{
+.Logo-info{
     background-color: black;
      min-width: var(--minimum_width_left_section); 
      height: 200px;
@@ -52,10 +53,45 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+    /* Flex positioning wasnt ideal, so used positioning to fix it */
+    position: absolute;
+    top: 250px;
+
+   
 }
+.Logo-title{
+    position: relative;
+    left: 50px;
+    
+}
+
+.Logo-title::before{
+    content: url('./images/odin-lined.png');
+    transform: scale(.4);
+    display: inline-block;
+    position: absolute;
+    /* Had to use absolute on image, because it would shift text out of place */
+
+    margin-right: 20px;
+    bottom: -220px;
+    right: 70px;
+}
+.Logo-footer{
+    font-size: .7em;
+
+    /* Using flex wasnt getting the text where I wanted so resorted to positioning */
+    position: absolute;
+    bottom: 0px;
+}
+
 .Logo-footer a{
     color: white;
      min-width: var(--minimum_width_left_section);
+
+     
+     
 }
 
 
