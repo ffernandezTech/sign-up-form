@@ -7,6 +7,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+    --minimum_width_left_section: 500px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+}
 
 body{
     --Min_width: 100vw;
@@ -16,9 +27,10 @@ body{
 }
 section{
     border: solid red 2px;
+
 }
 .Logo-Title-Section{
-    min-width: max( 350px, calc(var(--Min_width) - 60vw));
+    min-width: var(--minimum_width_left_section);
     background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
     background-size:cover;
     background-repeat: no-repeat;
@@ -32,8 +44,9 @@ section{
 }
 .Logo-title{
     background-color: black;
-    min-width: max( 350px, calc(var(--Min_width) - 60vw)) ;
-    height: 200px;
+     min-width: var(--minimum_width_left_section); 
+     height: 200px;
+     font-family: "Lobster", sans-serif;
     font-size: 5rem;
     opacity: .5;
     display: flex;
@@ -42,10 +55,10 @@ section{
 }
 .Logo-footer a{
     color: white;
-    min-width: max( 350px, calc(var(--Min_width) - 60vw)) ;
-   
-    
+     min-width: var(--minimum_width_left_section);
 }
+
+
 
 
 
