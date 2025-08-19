@@ -3,6 +3,7 @@
 *::after{
     /* Need to find a font family for everything */
 
+
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -13,11 +14,13 @@
   font-style: normal;
 }
 
+
 :root{
     --minimum_width_left_section: 500px;
     font-family:'Times New Roman', Times, serif;
     font-size: 16px;
 }
+
 
 body{
     --Min_width: 100vw;
@@ -28,6 +31,7 @@ body{
 section{
     border: solid red 2px;
 
+
 }
 .Logo-Title-Section{
     min-width: var(--minimum_width_left_section);
@@ -36,16 +40,18 @@ section{
     background-repeat: no-repeat;
     color: white;
 
+
     display: flex;
     flex-direction: column;
     align-items: center;
 
+
     position: relative;
-    
+   
 }
 .Logo-info{
     background-color: black;
-     min-width: var(--minimum_width_left_section); 
+     min-width: var(--minimum_width_left_section);
      height: 200px;
      font-family: "Lobster", sans-serif;
     font-size: 5rem;
@@ -55,17 +61,21 @@ section{
     align-items: center;
 
 
+
+
     /* Flex positioning wasnt ideal, so used positioning to fix it */
     position: absolute;
     top: 250px;
+
 
    
 }
 .Logo-title{
     position: relative;
     left: 50px;
-    
+   
 }
+
 
 .Logo-title::before{
     content: url('./images/odin-lined.png');
@@ -74,6 +84,7 @@ section{
     position: absolute;
     /* Had to use absolute on image, because it would shift text out of place */
 
+
     margin-right: 20px;
     bottom: -220px;
     right: 70px;
@@ -81,14 +92,17 @@ section{
 .Logo-footer{
     font-size: .7em;
 
+
     /* Using flex wasnt getting the text where I wanted so resorted to positioning */
     position: absolute;
     bottom: 0px;
 }
 
+
 .Logo-footer a{
     color: white;
      min-width: var(--minimum_width_left_section);
+
 
      
      
@@ -96,5 +110,18 @@ section{
 
 
 
+
+label{
+
+
+    width: 150px;
+    margin-right: 22px;
+   
+    display: inline-block;
+    text-align: left;
+    font-size: .7rem;
+    font-weight: bold;
+    /* border: solid 2px red; */
+}
 
 
