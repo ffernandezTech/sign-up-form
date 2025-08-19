@@ -107,7 +107,11 @@ section{
      
      
 }
-
+fieldset{
+    padding: 30px;
+    /* this color fits better for the background of the whole div instead of the form */
+    background-color: whitesmoke;
+}
 
 
 
