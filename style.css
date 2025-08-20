@@ -107,25 +107,75 @@ section{
      
      
 }
-fieldset{
-    padding: 30px;
+
+
+.Login-Section{
+
+
+    min-width: 950px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* this color fits better for the background of the whole div instead of the form */
     background-color: whitesmoke;
+
+
+
 }
 
+
+
+fieldset{
+    padding: 0px 30px;
+    background-color: white;
+
+    width: 700px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+
+
+}
+
+fieldset p{
+    padding: 5px 0px;
+    width: 50vw;
+    font-weight: bold;
+    font-size: 1.4rem;
+    /* border: solid 2px red; */
+}
+
+fieldset div{
+
+    /* border: solid 1px red; */
+    min-width: 1050px;
+}
 
 
 label{
 
 
-    width: 150px;
-    margin-right: 22px;
+    width: 450px;
+    /* margin-right: 10px; */
    
     display: inline-block;
     text-align: left;
-    font-size: .7rem;
+    font-size: 1rem;
     font-weight: bold;
     /* border: solid 2px red; */
+}
+
+input[type='text'],
+input[type = 'email'],
+input[type = 'password']{
+    margin-bottom: 10px;
+    height: 25px;
+    width: 450px;
+
+ 
+
+
 }
 
 
