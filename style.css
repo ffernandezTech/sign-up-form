@@ -16,7 +16,7 @@
 
 
 :root{
-    --minimum_width_left_section: 500px;
+    --minimum_width_left_section: 30%;
     --Min_width: 100vw;
     font-family:'Times New Roman', Times, serif;
     font-size: 16px;
@@ -26,15 +26,14 @@
 body{
     min-width: var(--Min_width);
     height: 100vh;
-     overflow: scroll;
     display: flex;
     
 }
-section{
+/* section{
     border: solid red 2px;
 
 
-}
+} */
 .Logo-Title-Section{
     width: var(--minimum_width_left_section);
     background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
@@ -53,7 +52,7 @@ section{
 }
 .Logo-info{
     background-color: black;
-     min-width: var(--minimum_width_left_section);
+     width: 100%;
      height: 200px;
      font-family: "Lobster", sans-serif;
     font-size: 6rem;
@@ -114,7 +113,7 @@ section{
 .Login-Section{
 
 
-    width: calc(var(--Min_width) - var(--minimum_width_left_section));
+    width: 60%;
 
     display: flex;
     flex-direction: column;
@@ -146,7 +145,7 @@ section{
 fieldset{
     padding: 0px 30px;
     background-color: white;
-    overflow: scroll;
+    
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -212,6 +211,19 @@ button{
      color: white;
      font-size: 1.2rem;
      font-weight: bold;
+
+}
+
+.returning-user{
+
+    margin: 30px auto 0px 30px;
+    font-size: 1.3rem;
+}
+
+.returning-user a{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
 
 }
 
