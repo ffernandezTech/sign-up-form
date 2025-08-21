@@ -17,16 +17,18 @@
 
 :root{
     --minimum_width_left_section: 500px;
+    --Min_width: 100vw;
     font-family:'Times New Roman', Times, serif;
     font-size: 16px;
 }
 
 
 body{
-    --Min_width: 100vw;
     min-width: var(--Min_width);
     height: 100vh;
+     overflow: scroll;
     display: flex;
+    
 }
 section{
     border: solid red 2px;
@@ -34,7 +36,7 @@ section{
 
 }
 .Logo-Title-Section{
-    min-width: var(--minimum_width_left_section);
+    width: var(--minimum_width_left_section);
     background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
     background-size:cover;
     background-repeat: no-repeat;
@@ -54,7 +56,7 @@ section{
      min-width: var(--minimum_width_left_section);
      height: 200px;
      font-family: "Lobster", sans-serif;
-    font-size: 5rem;
+    font-size: 6rem;
     opacity: .5;
     display: flex;
     justify-content: center;
@@ -87,7 +89,7 @@ section{
 
     margin-right: 20px;
     bottom: -220px;
-    right: 70px;
+    right: 85px;
 }
 .Logo-footer{
     font-size: .7em;
@@ -112,7 +114,7 @@ section{
 .Login-Section{
 
 
-    min-width: 950px;
+    width: calc(var(--Min_width) - var(--minimum_width_left_section));
 
     display: flex;
     justify-content: center;
@@ -129,8 +131,7 @@ section{
 fieldset{
     padding: 0px 30px;
     background-color: white;
-
-    width: 700px;
+    overflow: scroll;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
