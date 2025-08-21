@@ -117,13 +117,27 @@ section{
     width: calc(var(--Min_width) - var(--minimum_width_left_section));
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* this color fits better for the background of the whole div instead of the form */
     background-color: whitesmoke;
 
+    border: 5px solid blue;
 
 
+}
+
+.Description{
+    width: 82ch;
+    margin: 0px auto 0px 30px;
+
+    border: solid 2px red;
+}
+
+.Description p{
+
+    margin-bottom: 10px;
 }
 
 
