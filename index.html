@@ -70,8 +70,11 @@
                             <label for="user-num">PHONE NUMBER</label>
                        </div>
                        <div class="more-info-inputs">
-                           <input type="email" id="user-email" name="user-email">
-                            <input type="text" id="user-num" name="user-email">
+                           <input type="email" id="user-email" name="user-email" placeholder="user@email.com">
+
+                        <!-- added placeholder to email as an example and a pattern for digits that really wont do much
+                         This is will only check that the user entered 7-11 numbers, but dont check how the user entered them with hypens etc. -->
+                            <input type="text" id="user-num" name="user-email" pattern="\d{7,11}">
                        </div>
                     </div>
 
@@ -82,8 +85,8 @@
                             <label for="user-pwd-check">CONFIRM PASSWORD</label>
                         </div>
                         <div class="pwd-line-inputs">
-                            <input type="password" id="user-pwd" name="user-pwd" required>
-                            <input type="password" id="user-pwd-check" required>
+                            <input type="password" id="user-pwd" name="user-pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            <input type="password" id="user-pwd-check" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required>
                         </div>
                     </div>
            
